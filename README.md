@@ -21,3 +21,8 @@ end
 alert('Hi there');
 ```
 
+```ruby 
+def hello_world
+  puts "hello_world"
+end
+```
