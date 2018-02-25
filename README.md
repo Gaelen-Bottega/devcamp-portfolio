@@ -26,3 +26,11 @@ def hello_world
   puts "hello_world"
 end
 ```
+
+```ruby
+def hi
+puts "hi"
+end
+```
+
+#### email me for questions
