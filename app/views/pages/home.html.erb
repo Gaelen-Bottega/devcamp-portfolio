@@ -1,4 +1,4 @@
-<h1>Hi, <%= current_user.first_name if current_user %></h1>
+<h1>Hi, <%= current_user.first_name %></h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
 <h1>Blog Post</h1>
@@ -6,3 +6,7 @@
 
 <h1>Skills</h1>
 <%= @skills.inspect %>
+
+<h1>Class</h1>
+
+<p> <%= current_user.class %> </p>
