@@ -1,15 +1,19 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
 
+  #I can use @page_title to change every pages controller Title in the Chrome tab
+
   # GET /blogs
   # GET /blogs.json
   def index
     @blogs = Blog.all
+    @page_title = "Portfolio Website | Blog" 
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    @page_title = @blog.title
   end
 
   # GET /blogs/new
