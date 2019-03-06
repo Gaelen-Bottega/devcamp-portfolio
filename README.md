@@ -35,4 +35,4 @@ end
 
 #### email me for questions
 
-## Notice: For the variable "percent_utilized" you have to use "percent_utlizied" because of a developer spelling error and now it's everywhere in the files.
+## Notice: For the variable "percent_utilized" you have to use "percent_utlizied" because of a developer spelling error and now it's everywhere in the files. :)

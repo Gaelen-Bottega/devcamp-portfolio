@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  layout "portfolio"
+
   def index 
     @portfolio_item = Portfolio.all
     @page_title = "Gaelen's Portfolio | Projects"
