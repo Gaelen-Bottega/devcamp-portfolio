@@ -7,6 +7,7 @@
     <meta name="keywords" content="<%= @seo_keywords %>">
 
     
+    <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -23,7 +24,7 @@
     
     <%= yield %>
 
-    <%= render "shared/nav" %> 
+    <%= render "shared/nav", location: 'bottom' %> 
 
     <% if session[:source] %>
       <p> Thanks for visiting me from <%= session[:source] %>! </p>
