@@ -48,7 +48,7 @@ class PortfoliosController < ApplicationController
 
   def show
     @portfolio_item = Portfolio.find(params[:id])
-    #@page_title = #edit this later to show Details for: porfolio_item.title
+    @page_title = "Portfolio | #{@portfolio_item.title}"
   end
 
   def destroy 
