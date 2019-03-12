@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20190208172132) do
     t.string "slug"
     t.integer "status", default: 0
     t.bigint "topic_id"
-    t.index ["slug"], name: "index_blogs_on_slug", unique: true
-    t.index ["topic_id"], name: "index_blogs_on_topic_id"
+    t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
+    t.index ["topic_id"], name: "index_blogs_on_topic_id", using: :btree
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20190208172132) do
     t.bigint "portfolio_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id"
+    t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id", using: :btree
   end
 
   create_table "topics", force: :cascade do |t|
@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 20190208172132) do
     t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 

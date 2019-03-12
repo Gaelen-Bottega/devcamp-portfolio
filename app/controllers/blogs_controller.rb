@@ -15,6 +15,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     @page_title = @blog.title
+    @seo_keywords = @blog.body
   end
 
   # GET /blogs/new
@@ -37,7 +38,6 @@ class BlogsController < ApplicationController
         
       else
         format.html { render :new }
-        
       end
     end
   end
@@ -67,8 +67,15 @@ class BlogsController < ApplicationController
   end
 
   def toggle_status
-    byebug
+    if @blog.draft?
+      @blog.published!
+    elsif @blog.published?
+      @blog.draft!
+    end
+
+     redirect_to blogs_url, notice: 'Post status has been updated.'
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
