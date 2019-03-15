@@ -53,3 +53,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.6'
 
+gem 'bootstrap', '~> 4.3.1'
+
+gem 'jquery-rails'
+
+gem 'gaelen_copyright', git: "https://github.com/Gaelen-Bottega/gaelen_copyright"
