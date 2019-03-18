@@ -57,4 +57,4 @@ gem 'bootstrap', '~> 4.3.1'
 
 gem 'jquery-rails'
 
-gem 'gaelen_copyright', git: "https://github.com/Gaelen-Bottega/gaelen_copyright"
+gem 'gaelen_copyright', '~> 1.0'

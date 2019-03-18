@@ -18,9 +18,13 @@
     
     <%= yield %>
 
-    <%= render "shared/nav", location: 'top' %> 
+    <%= render "shared/nav", location: 'top' %>
 
     <%= session_helper("application") %>
+
+    <br>
+
+    <%= copyright_generator %>
 
   </body>
 </html>

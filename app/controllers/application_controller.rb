@@ -4,12 +4,5 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageTitle
-
-
-  before_action :set_copyright
-
-  def set_copyright
-    @copyright = GaelenCopyright::Renderer.copyright 'Gaelen Rhoads', 'All Rights Reserved'
-  end
 end
 
