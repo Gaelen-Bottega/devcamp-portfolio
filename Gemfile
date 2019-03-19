@@ -58,3 +58,5 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 
 gem 'gaelen_copyright', '~> 1.0'
+
+gem 'petergate', '~> 2.0', '>= 2.0.1'
