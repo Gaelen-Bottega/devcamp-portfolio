@@ -131,18 +131,45 @@ body {
  * Custom Styles
  */
 
- .card-body {
+.card-body {
   color: black;
   text-align: left;
 
- }
+}
 
- .auth-links a {
+.auth-links a {
   color: black;
- }
+}
 
- .register-text {
+.register-text {
   text-align: right;
   margin-top: 15px;
   margin-bottom: -20px;
- }
+}
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
