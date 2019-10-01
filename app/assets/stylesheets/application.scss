@@ -44,7 +44,7 @@ body {
 
 .font-Oswald {
   font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: .3px;
   line-height: 2rem;
 }
 
@@ -139,4 +139,10 @@ body {
 
  .auth-links a {
   color: black;
+ }
+
+ .register-text {
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: -20px;
  }
